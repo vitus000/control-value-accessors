@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-list-item-content {
+  margin: 10px;
+}
+
+mat-form-field {
+  margin: 0 10px;
+
+  .mat-form-field-flex {
+    background-color: #8b8b8b !important;
+  }
+}
+
+.mat-button-base {
+  margin: 0 10px !important;
+}

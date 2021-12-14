@@ -1,0 +1,13 @@
+<form [formGroup]="userForm">
+  <mat-list-item>Personal Info</mat-list-item>
+  <app-personal-info formControlName="personalInfo"></app-personal-info>
+  <mat-divider></mat-divider>
+  <mat-list-item>Address</mat-list-item>
+  <app-address formControlName="address"></app-address>
+  <mat-divider></mat-divider>
+
+  <button mat-raised-button color="secondary" title="Set default value from parent form" (click)="setDefaultData()">Set Default</button>
+  <button mat-raised-button color="secondary" title="Disable child Address form from parent"  (click)="disableAddress()">Disable Address</button>
+  <button mat-raised-button color="secondary" title="Enable child Address form from parent"  (click)="enableAddress()">Enable Address</button>
+  <button mat-raised-button color="primary" (click)="submit()">Submit</button>
+</form>
