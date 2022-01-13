@@ -32,16 +32,20 @@ export class AppComponent implements OnInit {
     });
   }
 
+  setDefaultData() {
+    this.userForm.patchValue(this.DEFAULT_USER_DATA);
+  }
+
+  clear() {
+    this.userForm.reset();
+  }
+
   disableAddress() {
     this.userForm.get('address').disable();
   }
 
   enableAddress() {
     this.userForm.get('address').enable();
-  }
-
-  setDefaultData() {
-    this.userForm.patchValue(this.DEFAULT_USER_DATA);
   }
 
   submit() {
